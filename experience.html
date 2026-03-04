@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Timothy Masila</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 1px solid var(--glass-border);
+            margin-bottom: 3rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 5px;
+            width: 9px;
+            height: 9px;
+            background: var(--text-primary);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="nav-sidebar" id="sidebar">
+        <div class="nav-logo">MASILA</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="experience.html" class="active">Experience</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container fade-in">
+            <h2 class="section-title">Experience</h2>
+
+            <div style="margin-top: 3rem;">
+                <!-- Boeing -->
+                <div class="timeline-item">
+                    <h3 style="font-size: 1.5rem;">Manufacturing Engineer</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Boeing Gdansk | Since November 2022
+                    </p>
+                    <ul style="color: var(--text-secondary); padding-left: 1.2rem; list-style: disc;">
+                        <li>Designing and developing efficient manufacturing processes and systems.</li>
+                        <li>Implementing appropriate equipment, tools, and technologies.</li>
+                        <li>Ensuring compliance with safety and environmental regulations.</li>
+                    </ul>
+                </div>
+
+                <!-- Revolut -->
+                <div class="timeline-item">
+                    <h3 style="font-size: 1.5rem;">Senior KYC Analyst / Support Specialist</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Revolut Krakow | June 2021 - Oct
+                        2022</p>
+                    <ul style="color: var(--text-secondary); padding-left: 1.2rem; list-style: disc;">
+                        <li>Support Team Leaders and collaborate with management for training calendars.</li>
+                        <li>Monitoring team performance and ensuring productivity as Shift Lead Assistant.</li>
+                        <li>Assisting in review of matter risk assessments and safeguards.</li>
+                    </ul>
+                </div>
+
+                <!-- Linetech -->
+                <div class="timeline-item">
+                    <h3 style="font-size: 1.5rem;">Aircraft Technician</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Linetech Aircraft Maintenance | Sept
+                        2019 - Apr 2021</p>
+                    <ul style="color: var(--text-secondary); padding-left: 1.2rem; list-style: disc;">
+                        <li>Perform inspections for cracks, oil leaks, and wear using ATA codes.</li>
+                        <li>Ensure quality standards of FAA and customers are met.</li>
+                        <li>Maintain detailed documentation of repairs and maintenance.</li>
+                    </ul>
+                </div>
+
+                <!-- Skymax -->
+                <div class="timeline-item">
+                    <h3 style="font-size: 1.5rem;">Aircraft Maintenance Engineer</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Skymax Aviation Limited | Mar 2018 -
+                        Dec 2018</p>
+                    <ul style="color: var(--text-secondary); padding-left: 1.2rem; list-style: disc;">
+                        <li>Prepared technical reports for aircraft systems.</li>
+                        <li>Assembled and installed mechanical and hydraulic systems.</li>
+                        <li>Monitored aircraft components' reliability based on logbooks.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Timothy Masila</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 2rem;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            margin-bottom: 1.5rem;
+            transition: var(--transition-speed);
+        }
+
+        .contact-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(10px);
+            border-color: var(--text-primary);
+        }
+
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background: var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="nav-sidebar" id="sidebar">
+        <div class="nav-logo">MASILA</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container fade-in">
+            <h2 class="section-title">Get In Touch</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 3rem; max-width: 600px;">
+                I'm always open to discussing new manufacturing systems, aircraft design projects, or technical
+                consulting opportunities.
+            </p>
+
+            <div style="max-width: 500px;">
+                <!-- Email -->
+                <a href="mailto:timomasila05@gmail.com" class="contact-btn">
+                    <div class="icon-box">✉</div>
+                    <div>
+                        <h4 style="margin-bottom: 0.2rem;">Email Me</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">timomasila05@gmail.com</p>
+                    </div>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/48512847892" class="contact-btn">
+                    <div class="icon-box">💬</div>
+                    <div>
+                        <h4 style="margin-bottom: 0.2rem;">WhatsApp</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">+48 512 847 892</p>
+                    </div>
+                </a>
+            </div>
+
+            <div
+                style="margin-top: 4rem; border-top: 1px solid var(--glass-border); padding-top: 2rem; color: var(--text-secondary); font-size: 0.8rem;">
+                <p>Location: Gdansk, Poland | Ul. Modrzewskiego 4/2</p>
+                <p>&copy; 2026 Timothy Masila. All rights reserved.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
